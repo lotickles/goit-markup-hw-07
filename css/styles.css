@@ -286,6 +286,11 @@ img {
 
 .project_image {
   position: relative;
+  overflow: hidden;
+}
+.div_link {
+  position: relative;
+  overflow: hidden;
 }
 .pop-up {
   position: absolute;
