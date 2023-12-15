@@ -307,6 +307,11 @@ img {
   height: 100%;
 }
 
+.concept {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .project-card:hover .pop-up {
   opacity: 1;
   transform: translatey(0);
