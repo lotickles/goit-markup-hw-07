@@ -81,8 +81,8 @@ img {
   color: var(--ocean);
 }
 
-.link.nav_link_item:hover::after,
-.link.nav_link_item:focus::after {
+.blue-line:hover::after,
+.blue-line:focus::after {
   content: "<content: ''>";
   width: 100%;
   height: 4px;
