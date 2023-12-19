@@ -309,15 +309,13 @@ img {
 }
 
 .concept {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 40px 32px;
 }
 .project-card:hover .pop-up {
   opacity: 1;
   transform: translatey(0);
 }
-*/
+/*
 /*============HW5-blue overlay==========*/
 /*==================HOMEWORK THREE flex and styles========*/
 /*      HEADER     */
