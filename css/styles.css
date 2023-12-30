@@ -562,8 +562,7 @@ img {
 }
 .project-card {
   width: calc((100% - 48px) / 3);
-  /* overflow: hidden;
-  width: 360px; */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:nth-child(2 + 1) {
   margin-right: 0;
