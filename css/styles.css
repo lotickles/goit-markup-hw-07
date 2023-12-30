@@ -562,7 +562,6 @@ img {
 }
 .project-card {
   width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:nth-child(2 + 1) {
   margin-right: 0;
@@ -596,7 +595,10 @@ img {
   color: var(--slate);
 }
 /*hw5 overlay*/
-
+.blue_overlay {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0%);
+}
 .project_image {
   position: relative;
   overflow: hidden;
@@ -605,7 +607,12 @@ img {
   position: relative;
   overflow: hidden;
 }
-.pop-up {
+/*
+.img_cont {
+  position: relative;
+  overflow: hidden; */
+
+/* .pop-up {
   position: absolute;
   color: var(--cloud);
   background-color: rgba(77, 90, 229, 1);
@@ -618,10 +625,22 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 .concept {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   padding: 40px 32px;
+  color: var(--cloud);
+  padding: 40px 32px;
+  background-color: var(--iris);
+  height: 100%;
+  width: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:hover .pop-up {
   opacity: 1;
