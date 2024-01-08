@@ -53,7 +53,6 @@ img {
 .address .link:hover,
 .address .link:focus {
   color: var(--ocean);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*=========end of HW5*/
@@ -66,6 +65,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--slate);
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact_menu {
@@ -96,13 +96,13 @@ img {
 /*=====*homework5========*/
 .nav_link_item {
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav_link_item.active,
 .nav_link_item:hover,
 .nav_link_item:focus {
   color: var(--ocean);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav_link_item.active::after,
 .nav_link_item:hover::after,
@@ -339,13 +339,12 @@ img {
 .close-button:focus {
   background-color: var(--ocean);
   border: none;
-  fill: #ffffff;
 }
 .close-button-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button-svg:hover,
-.close-button-svg:focus {
+.close-button:hover .close-button-svg,
+.close-button:focus .close-button-svg {
   fill: #ffffff;
 }
 
