@@ -479,10 +479,10 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-links:hover,
-.social-media-links:focus {
+.section-four .social-media-links:hover,
+.section-four .social-media-links:focus {
   background-color: var(--ocean);
 }
 .socmed_icon {
@@ -513,7 +513,8 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--light-slate);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers_link:hover,
