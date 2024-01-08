@@ -338,13 +338,14 @@ img {
 .close-button:focus {
   background-color: var(--ocean);
   border: none;
+  fill: var(--white);
 }
 .close-button-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover .close-button-svg,
 .close-button:focus .close-button-svg {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 /* ====================HERO SECTION attributes*=======*/
@@ -596,6 +597,7 @@ img {
 }
 .project-card {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:nth-child(2 + 1) {
   margin-right: 0;
@@ -605,6 +607,7 @@ img {
 }
 .project-card .link:hover,
 .project-card .link:focus {
+  transform: translateY(0%);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
