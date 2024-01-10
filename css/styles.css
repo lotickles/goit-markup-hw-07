@@ -839,19 +839,6 @@ img {
   font-weight: 400;
 }
 
-submit {
-  display: flex;
-  padding: 8px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  color: var(--white);
-  text-align: center;
-  border-radius: 4px;
-  background-color: var(--iris);
-  cursor: pointer;
-  border: none;
-}
 .submit_btn {
   min-width: 165px;
   height: 40px;
@@ -869,7 +856,8 @@ submit {
   border: none;
   border-radius: 4px;
   text-align: center;
-  padding-top: 6px;
+  padding: 8px 24px;
+  gap: 16px;
 }
 
 .sent_icon {
