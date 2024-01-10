@@ -438,7 +438,7 @@ img {
   margin-bottom: 24px;
 }
 
-.privacy_policy {
+.svg_checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -451,10 +451,34 @@ img {
   justify-content: center;
   fill: transparent;
 }
-.visually-hidden:checked span {
+.aggreement_checkbox:checked + .label > .svg_checkbox {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
+}
+.policy_link {
+  color: var(--iris);
+}
+.submit_btn_form {
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+  padding: 16px 32px;
+  border: none;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ====================HERO SECTION attributes*=======*/
 .section-one {
