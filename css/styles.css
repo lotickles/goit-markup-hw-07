@@ -437,10 +437,8 @@ img {
 .checkbox {
   margin-bottom: 24px;
 }
-.terms {
-  display: block;
-}
-.policy {
+
+.privacy_policy {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
