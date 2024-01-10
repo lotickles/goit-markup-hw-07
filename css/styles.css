@@ -451,6 +451,11 @@ img {
   justify-content: center;
   fill: transparent;
 }
+.visually-hidden:checked span {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
 /* ====================HERO SECTION attributes*=======*/
 .section-one {
   background-image: linear-gradient(
