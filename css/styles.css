@@ -437,7 +437,14 @@ img {
 .checkbox {
   margin-bottom: 24px;
 }
-
+/* .chkbx {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: var(--navy-blue-modal, rgba(46, 47, 66, 0.4));
+  fill: currentColor;
+} */
 .svg_checkbox {
   width: 16px;
   height: 16px;
@@ -451,7 +458,7 @@ img {
   justify-content: center;
   fill: transparent;
 }
-.aggreement_checkbox:checked + .label > .svg_checkbox {
+.aggreement_checkbox:checked + .chkbx_label > .svg_checkbox {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
