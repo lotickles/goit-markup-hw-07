@@ -398,9 +398,9 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .input_box:focus {
+.input_box:focus {
   border-color: var(--iris);
-} */
+}
 .input_box:focus + .input_icons {
   fill: var(--iris);
   border-color: var(--iris);
