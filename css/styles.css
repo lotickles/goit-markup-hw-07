@@ -436,6 +436,9 @@ img {
 .textarea:focus {
   border-color: var(--iris);
 }
+.textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
 .checkbox {
   margin-bottom: 24px;
 }
@@ -452,8 +455,9 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
-.aggreement_checkbox:checked + .chkbx_label > .svg_checkbox {
+.agreement_checkbox:checked + .chkbx_label .svg_checkbox {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
