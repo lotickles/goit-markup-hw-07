@@ -403,7 +403,7 @@ img {
 }
 .input_box:focus + .input_icons {
   fill: var(--iris);
-  border-color: var(--iris);
+  /* border-color: var(--iris); */
 }
 
 .input_icons {
