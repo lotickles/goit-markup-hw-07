@@ -228,7 +228,7 @@
 <path d="m4.817 15.389-.169-.162-2.544 2.41 8.962 8.55L29.895 8.225l-2.527-2.411L11.066 21.35l-6.249-5.962z"/>
 </symbol>
 
-<symbol id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 22" >
+<symbol id="hamburger_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 22" >
   <g clip-path="url(#clip0_297053_2156)">
     <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
@@ -238,6 +238,8 @@
     </clipPath>
   </defs>
 </symbol>
+
+
 
 </svg>
 

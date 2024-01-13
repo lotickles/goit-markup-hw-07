@@ -27,18 +27,19 @@ body {
 img {
   display: block;
 }
+
 /*===========================LOGO==============*/
 /*default link style*/
 .link {
   text-decoration: none;
-  color: #2e2f42;
-}
-/*default list style*/
-.list {
+  /* color: var(--navyblue); */
   list-style: none;
-  text-decoration: none;
 }
-.logo {
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+.logo-web {
   color: var(--iris);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -48,23 +49,30 @@ img {
   text-transform: uppercase;
   margin-right: 76px;
 }
+.address_nav {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
 .link:hover,
 .link:focus,
-.address .link:hover,
-.address .link:focus {
+.address_nav .link:hover,
+.address_nav .link:focus {
   color: var(--ocean);
 }
 
 /*=========end of HW5*/
 /*==========================ADDRESS ======*/
-.address {
-  font-style: normal;
-}
-.address .link {
+
+.address_nav .link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
   align-items: center;
+  font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -72,7 +80,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-header {
+.logo-studio {
   color: var(--navyblue);
   font-family: Raleway;
   font-size: 18px;
@@ -212,6 +220,7 @@ img {
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
+  flex-wrap: wrap;
 }
 .button-style {
   color: var(--iris);
@@ -253,17 +262,31 @@ img {
   display: flex;
   padding: 0;
   gap: 40px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
 }
 .header .link {
   padding: 24px 0;
 }
 
-.header .nav {
+.header .header_navigation {
   display: flex;
   gap: 40px;
-}
-.nav {
+  flex-wrap: wrap;
   align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navigation_menu {
+  color: var(--navyblue, #2e2f42);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
 /*========SECTION1 Hero =========*/
 
@@ -535,11 +558,14 @@ img {
   position: absolute;
   clip-path: inset(100%);
 }
-.section-two .list {
+.section-two {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
 }
-.section-two .list:last-child {
+.section-two:last-child {
   margin-right: 0;
 }
 .feature-list {
@@ -555,9 +581,12 @@ img {
   flex-direction: column;
 }
 
-.section-three .list {
+.section-three {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
 }
 .list-images {
   width: calc((100% - 48px) / 3);
@@ -600,11 +629,11 @@ img {
   background-color: var(--white);
 }
 /*HW*/
-.trailing-icons {
+/* .trailing-icons {
   display: inline-flex;
   justify-content: center;
   gap: 24px;
-}
+} */
 .social-media-item {
   width: 40px;
   height: 40px;
@@ -664,13 +693,15 @@ img {
 /*=========FOOOTER=========*/
 .footer {
   background-color: var(--navyblue);
-  padding: 100px 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
-.footer .container {
-  align-items: baseline;
-  justify-content: flex-start;
+.footer_inner_container {
+  display: flex;
+  justify-content: space-between;
 }
-.footer .logo {
+
+.footer .logo-web {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -694,7 +725,9 @@ img {
 
 .footer-socmed-cont {
   display: flex;
-  margin-right: 120px;
+  justify-content: space-evenly;
+
+  /* margin-right: 120px; */ /*8removed for mobile*/
 }
 .footer_socmed {
   font-weight: 500;
@@ -717,6 +750,82 @@ img {
 .footer-socmed-cont .social-media-links:focus {
   background-color: var(--green);
 }
+
+/*-----------footer email input-------*/
+.footer_subscription {
+  display: flex;
+  justify-content: center;
+}
+.subscription_text {
+  color: var(--white);
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  /* margin-bottom: 16px; */
+}
+.email_label {
+  color: var(--white);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  letter-spacing: 0.48px;
+}
+.email_form {
+  gap: 24px;
+  display: flex;
+}
+
+.input_email {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  font-size: 12 px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.submit_btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--iris);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  padding: 8px 24px;
+  gap: 16px;
+}
+
+.sent_icon {
+  margin-left: 16px;
+  fill: currentColor;
+}
+/*===========================end of Footer style*/
+
 /*==========IMAGES=====PORTFOLIO PAGE=========*/
 .cards {
   display: flex;
@@ -730,7 +839,7 @@ img {
 .project-card:nth-child(2 + 1) {
   margin-right: 0;
 }
-/*hw5 overlay*/
+/*==========================hw5 overlay*/
 .blue_overlay {
   display: block;
   text-decoration: none;
@@ -789,77 +898,4 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-}
-/*-----------footer email input-------*/
-.footer-input {
-  display: flex;
-  flex-direction: column;
-}
-.subscribe {
-  color: var(--white);
-  /* Body Medium */
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-}
-.email_label {
-  color: var(--white);
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 200% */
-  letter-spacing: 0.48px;
-}
-.email_form {
-  gap: 24px;
-  display: flex;
-}
-
-.input_email {
-  width: 264px;
-  height: 40px;
-  flex-shrink: 0;
-  border: 1px solid var(--white);
-  background-color: transparent;
-  font-size: 12 px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  padding-left: 16px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--white);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.submit_btn {
-  min-width: 165px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  background-color: var(--iris);
-  color: var(--white);
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-  padding: 8px 24px;
-  gap: 16px;
-}
-
-.sent_icon {
-  margin-left: 16px;
-  fill: currentColor;
 }
