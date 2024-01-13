@@ -648,7 +648,7 @@ img {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-four .social-media-links:hover,
+. .section-four .social-media-links:hover,
 .section-four .social-media-links:focus {
   background-color: var(--ocean);
 }
