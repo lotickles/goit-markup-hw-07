@@ -28,6 +28,15 @@
   <body>
     <header class="header mobile_header_container">
       <div class="hamburger_container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="hamburger_icon">
+            <use href="./images/icons.svg#hamburger_menu"></use>
+          </svg>
+        </button>
         <!--this is for hamburger menu-->
 
         <nav class="header_navigation">
@@ -65,15 +74,6 @@
             </li>
           </ul>
         </address>
-        <span
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="hamburger_icon">
-            <use href="./images/icons.svg#hamburger_menu"></use>
-          </svg>
-        </span>
       </div>
     </header>
     <main>
@@ -642,89 +642,87 @@
         </form>
       </div>
     </div>
-    <div class="menu_container js-menu-container" id="mobile_menu">
-      <button class="hamburger_menu_close js-close-menu">
-        <svg class="menu_icon" width="24" height="24">
-          <use href="./images/icons.svg#close_black"></use>
+    <div class="hamburger_menu_container js-menu-container" id="mobile_menu">
+      <button type="button" class="close-button" data-modal-close>
+        <svg class="close-button-svg" width="8" height="8">
+          <use href="./images/icons.svg#close-black"></use>
         </svg>
       </button>
-      <ul>
+      <ul class="list hamburger_links">
         <li>
           <a class="link hamb_link_item active" href="./index.html">Studio</a>
         </li>
         <li>
           <a class="link hamb_link_item" href="./portfolio.html">Portfolio</a>
         </li>
-        <li>
-          <a class="link hamb_link_item" href="">Contacts</a>
-        </li>
+        <li><a class="link hamb_link_item" href="">Contacts</a></li>
       </ul>
       <div class="address_hamburger_wrapper">
-        <address class="hamb_address">
+        <span class="hamburger_address">
           <ul class="list hamburger_contacts">
-            <li class="hamburger_contacts">
+            <li>
               <a class="hamburger_tel" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
-            <li class="hamburger_contacts">
+            <li>
               <a class="hamburger_email" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
-        </address>
-        <ul class="list trailing-icons">
-          <li class="social-media-item">
-            <a
-              class="social-media-links"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener no-referrer"
-            >
-              <svg class="socmed_icon" width="16" height="16">
-                <use href="./images/icons.svg#instagram" />
-              </svg>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a
-              class="social-media-links"
-              href="https://www.twitter.com/"
-              target="_blank"
-              rel="noopener no-referrer"
-            >
-              <svg class="socmed_icon" width="16" height="16">
-                <use href="./images/icons.svg#twitter" />
-              </svg>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a
-              class="social-media-links"
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener no-referrer"
-            >
-              <svg class="socmed_icon" width="16" height="16">
-                <use href="./images/icons.svg#facebook" />
-              </svg>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a
-              class="social-media-links"
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener no-referrer"
-            >
-              <svg class="socmed_icon" width="16" height="16">
-                <use href="./images/icons.svg#linkedin" />
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </span>
       </div>
+      <ul class="list trailing-icons">
+        <li class="social-media-item">
+          <a
+            class="social-media-links"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener no-referrer"
+          >
+            <svg class="socmed_icon" width="16" height="16">
+              <use href="./images/icons.svg#instagram" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a
+            class="social-media-links"
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener no-referrer"
+          >
+            <svg class="socmed_icon" width="16" height="16">
+              <use href="./images/icons.svg#twitter" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a
+            class="social-media-links"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener no-referrer"
+          >
+            <svg class="socmed_icon" width="16" height="16">
+              <use href="./images/icons.svg#facebook" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a
+            class="social-media-links"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener no-referrer"
+          >
+            <svg class="socmed_icon" width="16" height="16">
+              <use href="./images/icons.svg#linkedin" />
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
