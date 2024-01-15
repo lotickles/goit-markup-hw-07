@@ -22,45 +22,55 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles320.css" />
+    <link rel="stylesheet" href="./css/portfolio-styles320.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="list nav">
-          <a class="link logo" href="./index.html">
-            Web
-            <span class="logo-header">Studio</span>
-          </a>
-          <ul class="list">
-            <!--first nav link-->
-            <li class="nav-link">
-              <a class="link nav_link_item" href="./index.html">Studio</a>
+      <div class="mobile_header_container">
+        <nav class="header_navigation">
+          <a class="link logo-web" href="./index.html"
+            >Web <span class="logo-studio">Studio</span></a
+          >
+          <ul class="navigation_menu list">
+            <li class="link nav-link">
+              <a class="link nav_link_item active" href="./index.html"
+                >Studio</a
+              >
             </li>
-            <!--second nav-link-->
-            <li class="nav-link">
-              <a class="link nav_link_item active" href="./portfolio.html"
+            <li class="link nav-link">
+              <a class="link nav_link_item" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <!--third nav-link-->
-            <li class="nav-link">
-              <a class="link nav_link_item" href="./contacts.html">Contacts</a>
+            <li class="link nav-link">
+              <a class="link nav_link_item" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address class="address nav">
+        <address class="address_nav list">
           <ul class="list">
             <li>
-              <a class="link" href="mailto:info@devstudio.com"
+              <a class="link contact_menu" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              <a class="link contact_menu" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
+        <span
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="hamburger_icon">
+            <use href="./images/icons.svg#hamburger_menu"></use>
+          </svg>
+        </span>
       </div>
     </header>
 
@@ -71,7 +81,9 @@
 
           <ul class="list filter-button">
             <li class="button-link">
-              <button class="button button-style" type="button">All</button>
+              <button class="button button-style active" type="button">
+                All
+              </button>
             </li>
             <li>
               <!--============================button2-->
@@ -99,11 +111,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img
-                    src="./images/row1-image1.jpg"
-                    alt="banking"
-                    width="360"
-                  />
+                  <img src="./images/portimage1-x1.jpg" alt="banking" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -120,11 +128,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img
-                    src="./images/row1-image2.jpg"
-                    alt="payment"
-                    width="360"
-                  />
+                  <img src="./images/portimage2-x1.jpg" alt="payment" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -141,11 +145,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img
-                    src="./images/row1-image3.jpg"
-                    alt="meditation"
-                    width="360"
-                  />
+                  <img src="./images/portimage3-x1.jpg" alt="meditation" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -162,7 +162,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img src="./images/row2-image1.jpg" alt="taxi" width="360" />
+                  <img src="./images/portimage4-x1.jpg" alt="taxi" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -179,11 +179,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img
-                    src="./images/row2-image2.jpg"
-                    alt="screen"
-                    width="360"
-                  />
+                  <img src="./images/portimage5-x1.jpg" alt="screen" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -200,11 +196,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img
-                    src="./images/row2-image3.jpg"
-                    alt="online"
-                    width="360"
-                  />
+                  <img src="./images/portimage6-x1.jpg" alt="online" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -221,12 +213,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img
-                    src="./images/row3-image1.jpg"
-                    alt="instagram"
-                    width="360"
-                  />
-
+                  <img src="./images/portimage7-x1.jpg" alt="instagram" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -243,7 +230,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img src="./images/row3-image2.jpg" alt="food" width="360" />
+                  <img src="./images/portimage8-x1.jpg" alt="food" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -260,11 +247,7 @@
             <li class="project-card">
               <a class="blue_overlay" href="">
                 <div class="div_link">
-                  <img
-                    src="./images/row3-image3.jpg"
-                    alt="coffee"
-                    width="360"
-                  />
+                  <img src="./images/portimage9-x1.jpg" alt="coffee" />
                   <p class="concept">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -283,74 +266,76 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-logo __column">
-          <a class="link logo" href="./index.html">
-            Web
-            <span class="footer_studio">Studio</span>
-          </a>
+        <div class="footer_inner_container">
+          <div class="footer-logo __column">
+            <a class="link logo-web" href="./index.html">
+              Web
+              <span class="footer_studio">Studio</span>
+            </a>
 
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-socmed-cont __column">
+            <p class="footer_socmed">Social media</p>
+            <ul class="list trailing-icons">
+              <li class="social-media-item">
+                <a
+                  class="social-media-links"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                >
+                  <svg class="socmed_icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item">
+                <a
+                  class="social-media-links"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                >
+                  <svg class="socmed_icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item">
+                <a
+                  class="social-media-links"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                >
+                  <svg class="socmed_icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item">
+                <a
+                  class="social-media-links"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                >
+                  <svg class="socmed_icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-socmed-cont __column">
-          <p class="footer_socmed">Social media</p>
-          <ul class="list trailing-icons">
-            <li class="social-media-item">
-              <a
-                class="social-media-links"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener no-referrer"
-              >
-                <svg class="socmed_icon" width="24" height="24">
-                  <use href="./images/icons.svg#instagram" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                class="social-media-links"
-                href="https://www.twitter.com/"
-                target="_blank"
-                rel="noopener no-referrer"
-              >
-                <svg class="socmed_icon" width="24" height="24">
-                  <use href="./images/icons.svg#twitter" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                class="social-media-links"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener no-referrer"
-              >
-                <svg class="socmed_icon" width="24" height="24">
-                  <use href="./images/icons.svg#facebook" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                class="social-media-links"
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener no-referrer"
-              >
-                <svg class="socmed_icon" width="24" height="24">
-                  <use href="./images/icons.svg#linkedin" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-input">
-          <p class="subscribe">Subscribe</p>
+        <div class="footer_subscription">
+          <p class="subscription_text">Subscribe</p>
           <form class="email_form" name="email_form">
-            <label class="email_label">
+            <label class="email_cont">
               <input
                 class="input_email"
                 type="email"
@@ -358,7 +343,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="submit_btn" type="submit">
+            <button class="submit_btn subscription_text" type="submit">
               Subscribe
               <svg class="sent_icon" width="24" height="24">
                 <use href="./images/icons.svg#sent_arrow" />
@@ -368,5 +353,88 @@
         </div>
       </div>
     </footer>
+    <div class="hamburger_menu_container js-menu-container" id="mobile_menu">
+      <button type="button" class="close-button js-close-menu">
+        <svg class="close-button-svg" width="8" height="8">
+          <use href="./images/icons.svg#close-black"></use>
+        </svg>
+      </button>
+      <ul class="list hamburger_lists">
+        <li>
+          <a class="link hamb_link_item active" href="./index.html">Studio</a>
+        </li>
+        <li>
+          <a class="link hamb_link_item" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="link hamb_link_item" href="">Contacts</a></li>
+      </ul>
+      <div class="address_hamburger_wrapper">
+        <span class="hamburger_address">
+          <ul class="list hamburger_contacts">
+            <li>
+              <a class="hamburger_tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="hamburger_email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </span>
+        <ul class="list trailing-icons">
+          <li class="social-media-item">
+            <a
+              class="social-media-links"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener no-referrer"
+            >
+              <svg class="socmed_icon" width="16" height="16">
+                <use href="./images/icons.svg#instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a
+              class="social-media-links"
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener no-referrer"
+            >
+              <svg class="socmed_icon" width="16" height="16">
+                <use href="./images/icons.svg#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a
+              class="social-media-links"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener no-referrer"
+            >
+              <svg class="socmed_icon" width="16" height="16">
+                <use href="./images/icons.svg#facebook" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a
+              class="social-media-links"
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener no-referrer"
+            >
+              <svg class="socmed_icon" width="16" height="16">
+                <use href="./images/icons.svg#linkedin" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
