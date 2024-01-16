@@ -69,16 +69,23 @@ img {
   height: 22px;
   flex-shrink: 0;
 }
+
 .section-one {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero1x.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--navyblue);
+  background-position: center, center;
+  background-size: cover, cover;
   min-height: 432px;
-  flex-shrink: 0;
-  background: url(../images/hero1x.jpg), lightgray 50% / cover no-repeat;
-  background-repeat: no-repeat;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   display: flex;
   gap: 72px;
+  padding: 112px 54px;
 }
 
 .hero-title {
@@ -114,9 +121,10 @@ img {
   padding: 96px 16px;
 }
 .section-two .list {
+  /*========================removed the flex-direction -column*/
   display: flex;
   gap: 72px;
-  flex-direction: column;
+  flex-wrap: wrap;
   font-family: Roboto;
 }
 
@@ -134,6 +142,8 @@ img {
 }
 
 .feature-title {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   color: var(--navyblue, #2e2f42);
   text-align: center;
@@ -159,14 +169,19 @@ img {
   align-items: center;
   gap: 8px;
 }
+
 .section-four,
 .section-five {
   display: flex;
   justify-content: center;
   padding: 72px 16px;
 }
+
 .section-four {
   background: var(--cloud, #f4f4fd);
+}
+.member img {
+  width: 264px;
 }
 .section-header {
   color: var(--navyblue, #2e2f42);
@@ -271,10 +286,9 @@ img {
 .footer-socmed-cont,
 .footer_subscription {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
+  justify-content: center;
 }
 .footer_subscription {
   padding: 0 15px;
@@ -282,8 +296,7 @@ img {
 
 .footer_inner_container {
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 80px;
   padding: 90px 80px;
 }
@@ -583,7 +596,7 @@ img {
 .hamburger_menu_container {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
   min-width: 100%;
   min-height: 100%;
   flex-shrink: 0;
@@ -601,8 +614,8 @@ img {
   text-decoration: none;
 }
 
-.hamburger_menu_container:not(.is-open) {
-  display: none;
+.hamburger_menu_container.is-open {
+  left: 0;
 }
 
 .hamb_link_item {
@@ -657,3 +670,5 @@ img {
   width: 100%;
   flex-wrap: wrap;
 }
+
+/*for tablets and laptop styles*/
