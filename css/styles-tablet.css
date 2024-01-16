@@ -34,6 +34,11 @@
   .__column {
     flex-direction: column;
   }
+  /* .team-list {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -48,6 +53,16 @@
   .feature-list {
     flex-basis: calc((100% - 24px) / 2);
     align-items: flex-start;
+  }
+  .member {
+    display: flex;
+    flex-basis: calc((100% - 24px) / 2);
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  .team-list {
+    gap: 24px;
+    padding: 0 108px;
   }
 }
 

@@ -121,7 +121,6 @@ img {
   padding: 96px 16px;
 }
 .section-two .list {
-  /*========================removed the flex-direction -column*/
   display: flex;
   gap: 72px;
   flex-wrap: wrap;
@@ -183,6 +182,13 @@ img {
 .member img {
   width: 264px;
 }
+.member {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .section-header {
   color: var(--navyblue, #2e2f42);
   text-align: center;
@@ -201,7 +207,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 32px 0;
 }
 .member {
   display: flex;
@@ -243,7 +248,7 @@ img {
 }
 .team-list {
   display: inline-flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   gap: 72px;
 }
