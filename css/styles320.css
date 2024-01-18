@@ -495,7 +495,7 @@ img {
   position: relative;
 }
 .input_box {
-  width: 100%;
+  width: -webkit-fill-available;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -673,14 +673,13 @@ img {
   width: 100%;
 }
 
-.footer-trailing- {
+.footer-trailing {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.footer-trailing-icons{
-  displat:flex;
-  gap 24px;
-
+.footer-trailing-icons {
+  display: flex;
+  gap: 24px;
 }
