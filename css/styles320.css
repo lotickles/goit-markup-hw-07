@@ -69,7 +69,9 @@ img {
   height: 22px;
   flex-shrink: 0;
 }
-
+.section {
+  min-width: 100%;
+}
 .section-one {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -85,7 +87,7 @@ img {
   flex-wrap: wrap;
   display: flex;
   gap: 72px;
-  padding: 112px 54px;
+  padding: 112px 0px;
 }
 
 .hero-title {
@@ -204,7 +206,7 @@ img {
 .card-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 8px;
 }
@@ -215,13 +217,6 @@ img {
   padding-bottom: 32px;
   justify-content: center;
   align-items: center;
-}
-
-.trailing-icons {
-  display: flex;
-  display: inline-flex;
-  justify-content: center;
-  gap: 24px;
 }
 
 .social-media-links {
@@ -250,6 +245,7 @@ img {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
   gap: 72px;
 }
 .customers-list {
@@ -282,7 +278,7 @@ img {
 .footer {
   background-color: var(--navyblue);
 }
-.footer .container {
+.footer-container {
   width: 100%;
   min-height: 664px;
   padding-bottom: 96px;
@@ -295,6 +291,7 @@ img {
   gap: 16px;
   justify-content: center;
 }
+
 .footer_subscription {
   padding: 0 15px;
 }
@@ -303,7 +300,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 80px;
-  padding: 90px 80px;
+  padding: 80px 80px;
+  justify-content: center;
 }
 .footer_studio {
   color: var(--cloud);
@@ -673,7 +671,16 @@ img {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: wrap;
 }
 
-/*for tablets and laptop styles*/
+.footer-trailing- {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-trailing-icons{
+  displat:flex;
+  gap 24px;
+
+}
