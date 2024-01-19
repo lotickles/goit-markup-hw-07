@@ -210,6 +210,13 @@ img {
   align-items: center;
   gap: 8px;
 }
+.section-four .team-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
+}
 .member {
   display: flex;
   gap: 32px;
@@ -218,7 +225,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .social-media-links {
   display: flex;
   width: 100%;
@@ -241,13 +247,7 @@ img {
   height: 16px;
   flex-shrink: 0;
 }
-.team-list {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
-  gap: 72px;
-}
+
 .customers-list {
   display: flex;
   gap: 16px;
@@ -669,8 +669,7 @@ img {
 
 .trailing-icons {
   display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
+  gap: 24px;
 }
 
 .footer-trailing {
