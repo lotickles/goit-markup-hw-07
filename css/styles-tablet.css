@@ -117,6 +117,9 @@
   .customers_link {
     min-width: 168px;
   }
+  .customers-list {
+    padding: 0 16px;
+  }
   .menu-toggle {
     display: none;
   }

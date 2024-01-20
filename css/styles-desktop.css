@@ -65,12 +65,8 @@
   .section-five .container {
     flex-flow: column;
   }
-  .team-list {
-    /* display: flex;
-    flex-wrap: nowrap; 
-    align-items: unset;
-    flex-direction: unset;
-    justify-content: center; */
+  .customers-list {
+    padding: 0;
   }
 }
 
