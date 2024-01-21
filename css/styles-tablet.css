@@ -127,18 +127,36 @@
     flex-basis: calc((100% - 24px) / 2);
     align-items: flex-start;
   }
+  .footer-container {
+    min-height: 0;
+  }
+  .footer .footer-logo {
+    justify-content: unset;
+  }
+
   .footer_inner_container {
-    display: inline-flex;
+    /* display: inline-flex; */
     flex-wrap: nowrap;
-    text-align: left;
+    gap: 24px;
+    padding: 96px 108px;
+    justify-content: unset;
+  }
+  .footer .footer-socmed-cont {
+    justify-content: unset;
   }
   .footer_subscription {
+    display: flex;
+    flex-flow: column nowrap;
     width: 264px;
+    justify-content: unset;
+    /* padding: 72px 108px; */
   }
   .email_form {
+    display: flex;
+
     justify-content: unset;
     flex-wrap: unset;
-    padding-left: 60px;
-    display: flex;
+    padding-left: 0px;
+    margin-left: 96px;
   }
 }
