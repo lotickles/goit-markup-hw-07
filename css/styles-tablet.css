@@ -148,8 +148,7 @@
     display: flex;
     flex-flow: column nowrap;
     width: 264px;
-    justify-content: unset;
-    /* padding: 72px 108px; */
+    align-items: baseline;
   }
   .email_form {
     display: flex;

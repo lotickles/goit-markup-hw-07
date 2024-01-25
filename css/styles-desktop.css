@@ -68,6 +68,43 @@
   .customers-list {
     padding: 0;
   }
+
+  .footer-container {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    align-items: baseline;
+    justify-content: flex-start;
+    min-height: 312px;
+  }
+  .footer_inner_container {
+    gap: 0;
+    padding: 100px 15px;
+  }
+  .footer-logo {
+    margin-right: 120px;
+    display: unset;
+    /* flex-wrap: unwrap; */
+    justify-content: unset;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+  .footer-socmed-cont {
+    display: unset;
+    padding-right: 96px;
+  }
+  .footer_socmed {
+  }
+
+  .email_form {
+    margin-left: 0;
+  }
+  .footer_subscription {
+    padding: 0;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
