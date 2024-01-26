@@ -73,37 +73,38 @@
     display: flex;
     width: 1158px;
     margin: 0 auto;
-    padding-bottom: 0;
+    flex-flow: row;
     align-items: baseline;
     justify-content: flex-start;
-    min-height: 312px;
+    padding: 96px 15px;
   }
   .footer_inner_container {
-    gap: 0;
-    padding: 100px 15px;
-  }
-  .footer-logo {
-    margin-right: 120px;
-    display: unset;
-    /* flex-wrap: unwrap; */
-    justify-content: unset;
+    gap: 100px;
+    flex: 2 1 0%;
   }
 
-  .footer-text {
+  .footer .footer-logo {
+    flex: 2 1 0%;
+  }
+  .footer .footer-socmed-cont {
+    flex: 1 1 0%;
+  }
+
+  .email_cont {
+    flex: 2 1 0%;
+  }
+  .input_email {
     width: 264px;
   }
-  .footer-socmed-cont {
-    display: unset;
-    padding-right: 96px;
-  }
-  .footer_socmed {
-  }
-
-  .email_form {
-    margin-left: 0;
+  .subscription_text {
+    flex: 1 1 0%;
   }
   .footer_subscription {
-    padding: 0;
+    padding-left: 80px;
+    flex: 1 1 0%;
+  }
+  .footer-trailing-icons {
+    gap: 16px;
   }
 }
 

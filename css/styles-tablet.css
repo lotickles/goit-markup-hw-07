@@ -129,33 +129,43 @@
   }
   .footer-container {
     min-height: 0;
+    padding: 96px 108px;
+    display: flex;
+    flex-flow: column;
+    gap: 72px 0;
   }
   .footer .footer-logo {
     justify-content: unset;
+    flex: 1 1 calc((100% - 24px) / 2);
   }
 
   .footer_inner_container {
-    /* display: inline-flex; */
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     gap: 24px;
-    padding: 96px 108px;
-    justify-content: unset;
+    padding: 0;
+    align-items: start;
+    justify-content: left;
   }
   .footer .footer-socmed-cont {
-    justify-content: unset;
+    flex-flow: column nowrap;
+    justify-content: left;
+    flex: 1 1 calc((100% - 24px) / 2);
   }
   .footer_subscription {
     display: flex;
     flex-flow: column nowrap;
-    width: 264px;
+    /* width: 264px; */
     align-items: baseline;
+    padding: 0;
+  }
+  .email_cont {
+    width: auto;
+    flex-basis: calc((100% - 24px) / 2);
   }
   .email_form {
     display: flex;
-
     justify-content: unset;
     flex-wrap: unset;
-    padding-left: 0px;
-    margin-left: 96px;
+    padding-left: 0;
   }
 }
