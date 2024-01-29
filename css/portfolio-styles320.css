@@ -86,11 +86,33 @@
   letter-spacing: 0.32px;
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .portfolio .container {
     min-width: 768px;
-    flex-flow: column;
+    flex-flow: wrap;
   }
   .filter-button {
     padding: 12px 24px;
+  }
+  .cards {
+    width: auto;
+    gap: 24px;
+  }
+  .project-card {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .div_link img {
+    width: 356px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio .container {
+    min-width: 1158px;
+    flex-flow: wrap;
+  }
+  .div_link img {
+    width: 360px;
+  }
+  .project-card {
+    flex-basis: calc((100% - 24px) / 3);
   }
 }
