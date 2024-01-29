@@ -67,6 +67,7 @@
   }
   .customers-list {
     padding: 0;
+    gap: 24px;
   }
 
   .footer-container {

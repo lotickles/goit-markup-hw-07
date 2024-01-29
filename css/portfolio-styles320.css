@@ -9,10 +9,12 @@
 
 .filter-button {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
-  flex-wrap: wrap;
+  flex-flow: wrap;
+  padding: 8px 16px;
+  min-width: 100%;
 }
 .button-style {
   color: var(--iris);
@@ -82,4 +84,13 @@
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    flex-flow: column;
+  }
+  .filter-button {
+    padding: 12px 24px;
+  }
 }
