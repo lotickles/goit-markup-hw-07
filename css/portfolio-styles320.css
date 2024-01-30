@@ -40,79 +40,84 @@
   background-color: var(--ocean);
   color: var(--white);
 }
-.concept {
-  display: none;
-}
 .blue_overlay {
-  display: flex;
-  width: 100%;
-  padding-bottom: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  border: 1px solid var(--cloud, #f4f4fd);
-  background: var(--white, #fff);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  display: block;
   text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blue_overlay:hover,
+.blue_overlay:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.blue_overlay:hover .concept,
+.blue_overlay:focus .concept {
+  transform: translateY(0%);
+}
+
+.div_link {
+  position: relative;
+  overflow: hidden;
+}
+
+.concept {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  padding: 40px 32px;
+  background-color: var(--iris);
+  height: 100%;
+  width: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-container {
   display: flex;
-  padding: 0px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
   align-self: stretch;
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: 0;
+  margin-bottom: 8px;
 }
 .cards {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
+  gap: 48px 24px;
+  justify-content: center;
 }
 .card-title {
-  color: var(--navyblue, #2e2f42);
-  font-family: Roboto;
-  font-size: 20px;
   font-weight: 500;
-  line-height: 24px; /* 120% */
-  letter-spacing: 0.4px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  margin-bottom: 8px;
 }
 .design {
-  color: var(--slate, #434455);
-  font-family: Roboto;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 @media screen and (min-width: 768px) {
-  .portfolio .container {
-    min-width: 768px;
+  .portfolio_container {
     flex-flow: wrap;
   }
   .filter-button {
     padding: 12px 24px;
   }
-  .cards {
-    width: auto;
-    gap: 24px;
-  }
-  .project-card {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-  .div_link img {
-    width: 356px;
-  }
 }
 @media screen and (min-width: 1158px) {
-  .portfolio .container {
-    min-width: 1158px;
-    flex-flow: wrap;
+  .portfolio .project-container {
+    flex-flow: column;
   }
-  .div_link img {
-    width: 360px;
-  }
-  .project-card {
-    flex-basis: calc((100% - 24px) / 3);
+  .portfolio-section {
+    padding: 96px 0 120px 0;
   }
 }
